@@ -24,6 +24,7 @@
 
 <script>
 	export default {
+        name:'Page',
        	props:{
  			//当前页码
        		current: {
