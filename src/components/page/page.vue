@@ -88,5 +88,5 @@
 </script>
 
 <style lang="less" scoped>
-	@import "./style.less";
+	@import "../../style/components/page.less";
 </style>
