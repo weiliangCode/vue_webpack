@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="tabs-content" :style="contentStyle">
+        <div class="tabs-content" >
             <slot></slot>
         </div>
     </div>
@@ -107,7 +107,7 @@
             activeKey () {
                 this.updateBar();
                 this.updateStatus();
-                this.broadcast('Table', 'on-visible-change', true);
+                // this.broadcast('Table', 'on-visible-change', true);
             }
         }
     };
