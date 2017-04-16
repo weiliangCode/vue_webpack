@@ -1,11 +1,11 @@
 <template>
 	<div class="examples">
         <ul class="ex-list">
-            <li><router-link to="/alert">Alert</router-link></li>
-            <li> <router-link to="/modal">Modal</router-link></li>
-            <li><router-link to="/page">Page</router-link></li>
-            <li><router-link to="/table">Table</router-link></li>
-            <li><router-link to="/tabs">Tabs</router-link></li>
+            <li><router-link to="/alert">Alert消息提示</router-link></li>
+            <li> <router-link to="/modal">Modal对话框</router-link></li>
+            <li><router-link to="/page">Page分页器</router-link></li>
+            <li><router-link to="/table">Table表格</router-link></li>
+            <li><router-link to="/tabs">Tabs切换</router-link></li>
         </ul>
         <div class="ex-content">
             <router-view></router-view>
@@ -22,7 +22,7 @@
 </script>
 
 <style >
-    html,body{
+    html,body,#app{
         width:100%;
         height:100%;
     }
@@ -43,9 +43,8 @@
    }
 
    .ex-content{
-       width:80%;
+       width:75%;
        height:100%;
-       float:left;
-       background:#0f0;
+       float:right;
    }
 </style>
