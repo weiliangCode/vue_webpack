@@ -1,23 +1,17 @@
 <template>
 	<div class="hello">
-
-		<Modal modal-title="提醒" @on-ok="ok"></Modal>
-		<Table :columns="columns" :data="data"></Table>
+		<m-table :columns="columns" :condata="condata"></m-table>
 	</div>
 	
 </template>
 
 <script>
-	import Modal from '../components/modal';
-	import Table from '../components/table';
 
-	var list = [...'妙味课堂'];
+	import mTable from '../components/table';
+
 	export default {
-		name: 'hello',
 		data() {
 			return {
-				msg: 'Welcome to Your Vue.js App',
-				list: list,
 				columns:[
                     {
                         title: '姓名',
@@ -44,7 +38,7 @@
                         }
                     }
                 ],
-				data: [
+				condata: [
                     {
                         name: '王小明',
                         age: 18,
@@ -68,16 +62,10 @@
                 ],
 			}
 		},
-		components: { Modal , Table },
+		components: { mTable},
 		methods:{
-        ok:function (){
-            alert("改变一个div的样式")    
-        },
-        cancel:function (){
-            alert("取消了，干别的事情")    
+        
         }
-    }
-
 	}
 </script>
 

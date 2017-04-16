@@ -151,8 +151,4 @@
 	.m-icon-setting:before {
 	    content: "\E61E";
 	}
-
-	#app {
-		width: 500px;
-	}
 </style>

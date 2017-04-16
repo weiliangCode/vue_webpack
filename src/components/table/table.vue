@@ -7,7 +7,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="item in data">
+                <tr v-for="item in condata">
                     <td v-for="coData in item">{{coData}}</td>
                     <td><button>删除</button></td>
                 </tr>
@@ -18,9 +18,9 @@
 
 <script>
 	export default {
-        name:'Table',
+        name:'mTable',
         props:{
-            data: {
+            condata: {
                 type: Array,
                 default () {
                     return [];

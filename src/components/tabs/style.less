@@ -1,0 +1,70 @@
+.tabs{
+    width: 100%;
+}
+
+.tabsHead{
+    width: 100%;
+    height: 31px;
+    border-bottom: 1px solid #e5e7ea;
+    background: #e8f0fa;
+}
+
+.tabsHeadSub{
+    overflow: hidden;
+    width: 100%;
+    height: 26px;
+    border-bottom:1px solid #90b0da;
+    padding-left: 30px;
+    box-sizing: border-box;
+    .tabsNav{
+        font-size: 12px;
+        float: left;
+        height: 18px;
+        padding: 0 30px;
+        line-height: 18px;
+        text-align: center;
+        color: #282828;
+        cursor: pointer;
+        margin-top: 7px;
+        background-image: url(acrossTab-2.png);
+        position: relative;
+        i{
+            background-image: url(acrossTab-2.png);
+            background-position: right -30px;
+            width:17px;
+            height: 26px;
+            position: absolute;
+            top: 0;
+            right: -17px;
+            z-index: 2;
+        }
+    }
+    .tabsNav:hover{
+        background-position: 0 -60px;
+        i{
+            background-position: right -90px;
+        }
+    }
+    .tabsNav.active{
+        z-index: 3;
+        background-position:0 -120px;
+        i{
+            background-position: right -150px;
+        }
+    }
+}
+
+.tabsContent{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    .tabsC{
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background: red;
+    }
+}

@@ -1,21 +1,8 @@
 <template>
 	<div class="hello">
-		<Page :current="current" :total="total"></Page>
-		
-		<Modal modal-title="提醒" @on-ok="ok"></Modal>
-		<Modal @on-cancel="cancel"></Modal>
-		<Modal>
-			<ul slot="modal-content">
-				<li v-for="item of list">{{item}}</li>
-			</ul>
-			<div slot="modal-footer">
-				<span>确定</span>
-				<span>重置</span>
-				<span>返回</span>
-			</div>
-		</Modal>
-		
+
 		<Alert></Alert>
+
 		<Alert 
 			type="warning"  
 			:closeable="false" 
@@ -36,17 +23,13 @@
 			</template>	
 		</Alert>
 
-		<Tree :data="treeList"></Tree>
-			
 	</div>
 	
 </template>
 
 <script>
-	import Modal from '../components/modal';
 	import Alert from '../components/alert';
-	import Tree from '../components/tree';
-	import Page from '../components/page';
+
 	
 
 	var list = [...'组件封装'];
@@ -82,7 +65,7 @@
 				total:86
 			}
 		},
-		components: {Modal,Alert,Tree,Page},
+		components: {Alert},
 		methods:{
 	        ok:function (){
 	            alert("改变一个div的样式")    
